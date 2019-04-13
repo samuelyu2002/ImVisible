@@ -1,5 +1,7 @@
 # Pedestrian-Traffic-Lights Dataset (PTL)
 
+![](preview.png)
+
 Pedestrian-Traffic-Lights (PTL) is a high-quality image dataset of street intersections, created for the detection of pedestrian traffic lights and zebra crossings. Images have variation in weather, position and orientation in relation to the traffic light and zebra crossing, and size and type of intersection. 
 
 ### Stats
@@ -37,11 +39,15 @@ With the following distribution:
 Number of Images | 1477 | 1303 | 963 | 904 | 412
 Percentage | 29.2% | 25.8% | 19.0% | 17.9% | 8.1%
 
+Images may contain multiple pedestrian traffic lights, in which the intended "main" traffic light was chosen. a
+
 The coordinates represent the start and endpoint of the midline of the zebra crossing. They are labelled as the position on the original 4032x3024 sized image, so if a different resolution is used it is important to convert the image coordinates to the appropriate values or normalize the coordinates to be between a range of \[0, 1\].
 
 ## Download
 Annotations can be downloaded from the annotations folder in this repo. 
 There are three downloadable versions of the dataset. With our network, the [876x657](https://drive.google.com/open?id=1KhKT3mfcYcdb9Zwq5jZS1bkAJyogHZbZ) resolution images was used during training to accomodate random cropping. The [768x576](https://drive.google.com/open?id=117HUGczZwXFRbuBl7y4cHakH3xQV2Omo) version was used during validation and testing without a random crop. 
+
+The 4032x3024 images will be available soon!
 
 ## Model
 We created our own model that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. 
