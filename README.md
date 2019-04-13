@@ -31,6 +31,7 @@ Classes are as follows:
 4: None
 
 With the following distribution:
+
 | Red | Green | Countdown Green | Countdown Blank | None
 |-----|-------|-----------------|-----------------|------
 Number of Images | 1477 | 1303 | 963 | 904 | 412
