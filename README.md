@@ -20,6 +20,8 @@ An example is:
 
 \['IMG_2178.JPG', '2', '1040', '1712', '3210', '3016', 'not_blocked'\].
 
+Note that all labels are in String format, so it is neccessary to cast the coordinates to integers in python. 
+
 Classes are as follows:
 
 0: Red
@@ -39,7 +41,7 @@ With the following distribution:
 Number of Images | 1477 | 1303 | 963 | 904 | 412
 Percentage | 29.2% | 25.8% | 19.0% | 17.9% | 8.1%
 
-Images may contain multiple pedestrian traffic lights, in which the intended "main" traffic light was chosen. a
+Images may contain multiple pedestrian traffic lights, in which the intended "main" traffic light was chosen. 
 
 The coordinates represent the start and endpoint of the midline of the zebra crossing. They are labelled as the position on the original 4032x3024 sized image, so if a different resolution is used it is important to convert the image coordinates to the appropriate values or normalize the coordinates to be between a range of \[0, 1\].
 
@@ -50,7 +52,7 @@ There are three downloadable versions of the dataset. With our network, the [876
 The 4032x3024 images will be available soon!
 
 ## Model
-We created our own model that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. 
+We created our own pytorch model that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. 
 
 This is the structure of our network:
 ![](Model/structure.png)
