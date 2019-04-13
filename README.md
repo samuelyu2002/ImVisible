@@ -4,8 +4,8 @@ Pedestrian-Traffic-Lights (PTL) is a high-quality image dataset of street inters
 
 ### Stats
 
-| Training | Validation | Testing | Total
-|----------|------------|---------|-------
+ | Training | Validation | Testing | Total
+-|----------|------------|---------|-------
 Number of Images | 3456 | 864 | 739 | 5059
 Percentage | 68.3% | 17.1% | 14.6% | 100%
 
@@ -32,8 +32,8 @@ Classes are as follows:
 
 With the following distribution:
 
-| Red | Green | Countdown Green | Countdown Blank | None
-|-----|-------|-----------------|-----------------|------
+ | Red | Green | Countdown Green | Countdown Blank | None
+-|-----|-------|-----------------|-----------------|------
 Number of Images | 1477 | 1303 | 963 | 904 | 412
 Percentage | 29.2% | 25.8% | 19.0% | 17.9% | 8.1%
 
