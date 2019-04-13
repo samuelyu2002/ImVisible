@@ -42,3 +42,9 @@ The coordinates represent the start and endpoint of the midline of the zebra cro
 ## Download
 Annotations can be downloaded from the annotations folder in this repo. 
 There are three downloadable versions of the dataset. With our network, the [876x657](https://drive.google.com/open?id=1KhKT3mfcYcdb9Zwq5jZS1bkAJyogHZbZ) resolution images was used during training to accomodate random cropping. The [768x576](https://drive.google.com/open?id=117HUGczZwXFRbuBl7y4cHakH3xQV2Omo) version was used during validation and testing without a random crop. 
+
+## Model
+We created our own model that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. 
+
+This is the structure of our network:
+![](Model/structure.png)
