@@ -56,3 +56,6 @@ We created our own pytorch model that can be accessed from the Model folder in t
 
 This is the structure of our network:
 ![](Model/structure.png)
+
+## Application
+A demo iOS application is also provided. Requirements are iOS 11 and above. 
