@@ -1,4 +1,4 @@
-# Pedestrian-Traffic-Lights Dataset (PTL) and Traffic Light Detector LYTNet
+# Pedestrian Traffic Lights Dataset (PTL) and Traffic Light Detector LYTNet
 
 ![](preview.png)
 
