@@ -80,3 +80,5 @@ This is the structure of our network:
 ## Application
 A demo iOS application is also provided. Requirements are iOS 11 and above. The application continuously iterates through the flowchart below:
 ![](flowchart.png)
+
+To use the application, open the LYTNet demo xcode project, and drag the mlmodel file into the project to add a reference to it. Then, build the application while connecting a phone iOS 11 or above. 
