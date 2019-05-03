@@ -1,5 +1,8 @@
 # Pedestrian Traffic Lights Dataset (PTL) and Traffic Light Detector LYTNet
 
+### Introduction
+This project consists of three sections. First, we provide an image dataset of street intersections, labelled with the color of the corresponding pedestrian traffic light and the position of the zebra crossing in the image. Second, we provide a neural network adapted off of MobileNet v2 (LYTNet) that accepts a larger input size while still running at near real-time speeds on an IPhone 7. Third, we provide a demo iOS application that is able to run LYTNet and output the appropriate information onto the phone screen. 
+
 ![](preview.png)
 
 Pedestrian-Traffic-Lights (PTL) is a high-quality image dataset of street intersections, created for the detection of pedestrian traffic lights and zebra crossings. Images have variation in weather, position and orientation in relation to the traffic light and zebra crossing, and size and type of intersection. 
@@ -52,7 +55,7 @@ There are three downloadable versions of the dataset. With our network, the [876
 The 4032x3024 images will be available soon!
 
 ## Model
-We created our own pytorch model LYTNet that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. Given and input image, our model will return the appropriate color of the traffic light, and two image coordinates representing the predicted endpoints of the zebra crossing. 
+We created our own pytorch neural network LYTNet that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. Given and input image, our model will return the appropriate color of the traffic light, and two image coordinates representing the predicted endpoints of the zebra crossing. 
 
 Here are the precisions and recalls for each class:
 
@@ -69,8 +72,11 @@ Unblocked | 594 | 5.86 | 0.0725 | 0.0476 |
 Blocked | 145 | 7.97 | 0.0918 | 0.0649 |
 All | 739 | 6.27 | 0.0763 | 0.0510 |
 
+Our network is adapted from MobileNet, with a larger input size of 768x576 designed for image classification tasks that involve a smaller object within the image (such as a traffic light). Certain layers from MobileNet v2 were removed for the network to run at a near real-time frame rate (21 fps), but still maintain high accuracy. 
+
 This is the structure of our network:
 ![](Model/structure.png)
 
 ## Application
-A demo iOS application is also provided. Requirements are iOS 11 and above. 
+A demo iOS application is also provided. Requirements are iOS 11 and above. The application continuously iterates through the flowchart below:
+![](flowchart.png)
