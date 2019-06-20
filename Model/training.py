@@ -98,10 +98,10 @@ for epoch in range(MAX_EPOCHS):
         running_loss_cross_entropy += cross_entropy
 
     print('Epoch: ' + str(epoch+1))
-    print('Average training loss: ' + str(running_loss/108))
+    print('Average training loss: ' + str(running_loss/(j+1)))
     print('Average training MSE loss: ' + str(running_loss_MSE/(j+1)))
     print('Average training cross entropy loss: ' + str(running_loss_cross_entropy/(j+1)))
-    print('Training accuracy: ' + str(train_correct/train_total/32))
+    print('Training accuracy: ' + str(train_correct/train_total/BATCH_SIZE))
 
     train_MSE.append(running_loss_MSE/train_total)
     train_CE.append(running_loss_cross_entropy/train_total)
@@ -217,8 +217,8 @@ for epoch in range(MAX_EPOCHS):
         valid_MSE.append(val_mse_loss/val_total)
         valid_CE.append(val_ce_loss/val_total)
         
-        print("Precisions: " + precisions)
-        print("Recalls: " + recalls)
+        print("Precisions: " + str(precisions))
+        print("Recalls: " + str(recalls))
         print("Angle Error: " + str(val_angle_error/val_total))
         print("Startpoint Error: " + str(val_start_error/val_total))
         print("Endpoint Error: " + str(val_end_error/val_total))
