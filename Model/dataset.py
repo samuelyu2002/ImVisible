@@ -29,6 +29,10 @@ class TrafficLightDataset(Dataset):
 
         points = [points[0]/4032, points[1]/3024, points[2]/4032, points[3]/3024] #normalize coordinate values to be between [0,1]
         
+        normalize = transforms.Compose([transforms.ToTensor(),
+                transforms.Normalize(mean = [120.56737612047593, 119.16664454573734, 113.84554638827127], std=[66.32028460114392, 65.09469952002551, 65.67726614496246])
+        ])
+        
         if self.transformation:
             transform = transforms.Compose([transforms.RandomCrop((576,768))]) #random crop during training, not used during validation
             image = transform(image)
@@ -41,7 +45,6 @@ class TrafficLightDataset(Dataset):
                 points[0] = 1 - points[0] 
                 points[2] = 1 - points[2]
             
-        image = np.transpose(image, (2, 0, 1))
         points = torch.tensor(points)
         
         #combine all into a dictionary
