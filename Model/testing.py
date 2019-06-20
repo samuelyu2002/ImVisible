@@ -1,4 +1,5 @@
 import torch
+import time
 from torch.utils.data import DataLoader
 from network import LYTNet
 from loss import my_loss
@@ -53,6 +54,8 @@ fn = {'0':0, '1':0, '2':0, '3':0, '4':0}
 classes = {'0':'red', '1':'green', '2':'none', '3':'countdown_blank', '4':'countdown_green'}
 precisions = []
 recalls = []
+
+start_time = time.time()
 
 with torch.no_grad():
     
@@ -165,5 +168,6 @@ print("Unblocked startpoint error: " + str(running_start_unblock/unblock_count))
 print("Unblocked endpoint error: " + str(running_end_unblock/unblock_count))
 print("Accuracy: " + str(correct/total*100))
 
-print("Precisions: " + precisions)
-print("Recalls: " + recalls)
+print("Precisions: " + str(precisions))
+print("Recalls: " + str(recalls))
+print("Time Elapsed: " + str(time.time() - start_time))
