@@ -96,7 +96,7 @@ class LYTNet(nn.Module):
                                       nn.Dropout(0.1))
 
         #classfier section of the network
-        self.light_classifier = nn.Sequential(
+        self.classifier_light = nn.Sequential(
             nn.Linear(self.last_channel, 160),
             nn.BatchNorm1d(160),
             nn.ReLU6(inplace = True),
@@ -105,7 +105,7 @@ class LYTNet(nn.Module):
         )
         
         # regression for direction
-        self.direction_regression = nn.Sequential(
+        self.regression_direction = nn.Sequential(
             nn.Linear(self.last_channel, 80),
             nn.BatchNorm1d(80),
             nn.ReLU6(inplace = True),
@@ -117,8 +117,8 @@ class LYTNet(nn.Module):
     def forward(self, x):
         x = self.features(x)
         x = x.mean(3).mean(2)
-        x1 = self.light_classifier(x)
-        x2 = self.direction_regression(x)
+        x1 = self.classifier_light(x)
+        x2 = self.regression_direction(x)
         return x1, x2
 
     def _initialize_weights(self):
