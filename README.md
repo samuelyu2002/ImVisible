@@ -14,6 +14,9 @@ Pedestrian-Traffic-Lights (PTL) is a high-quality image dataset of street inters
 Number of Images | 3456 | 864 | 739 | 5059
 Percentage | 68.3% | 17.1% | 14.6% | 100%
 
+mean = [120.56737612047593, 119.16664454573734, 113.84554638827127]
+std=[66.32028460114392, 65.09469952002551, 65.67726614496246]
+
 ## Labels
 Each row of the csv files in the annotations folder contain a label for an image in the form:
 
