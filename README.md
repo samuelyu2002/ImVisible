@@ -14,8 +14,9 @@ Pedestrian-Traffic-Lights (PTL) is a high-quality image dataset of street inters
 Number of Images | 3456 | 864 | 739 | 5059
 Percentage | 68.3% | 17.1% | 14.6% | 100%
 
-mean = [120.56737612047593, 119.16664454573734, 113.84554638827127]
+Use these stats for image normalization:
 
+mean = [120.56737612047593, 119.16664454573734, 113.84554638827127]
 std=[66.32028460114392, 65.09469952002551, 65.67726614496246]
 
 ## Labels
@@ -59,14 +60,17 @@ There are three downloadable versions of the dataset. With our network, the [876
 The 4032x3024 images will be available soon!
 
 ## Model
+
+### LYTNet V1
+
 We created our own pytorch neural network LYTNet that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. Given and input image, our model will return the appropriate color of the traffic light, and two image coordinates representing the predicted endpoints of the zebra crossing. 
 
 Here are the precisions and recalls for each class:
 
-|   | Red | Green | Countdown Green | Countdown Blank | None |
-|---|-----|-------|-----------------|-----------------|------|
-Precision | 0.97 | 0.94 | 0.99 | 0.86 | 0.92 |
-Recall | 0.96 | 0.94 | 0.96 | 0.92 | 0.87 |
+|   | Red | Green | Countdown Green | Countdown Blank |
+|---|-----|-------|-----------------|-----------------|
+Precision | 0.97 | 0.94 | 0.99 | 0.86 |
+Recall | 0.96 | 0.94 | 0.96 | 0.92 |
 
 Here are the endpoint errors:
 
@@ -78,8 +82,24 @@ All | 739 | 6.27 | 0.0763 | 0.0510 |
 
 Our network is adapted from MobileNet, with a larger input size of 768x576 designed for image classification tasks that involve a smaller object within the image (such as a traffic light). Certain layers from MobileNet v2 were removed for the network to run at a near real-time frame rate (21 fps), but still maintain high accuracy. 
 
-This is the structure of our network:
+This is the structure of LYTNet V1:
 ![](Model/structure.png)
+
+### LYTNet V2
+
+Our network has been updated, achieving better accuracy. Below is a comparison between our two networks:
+
+|   | Network | Red | Green | Countdown Green | Countdown Blank |
+|---|---------|-----|-------|-----------------|-----------------|
+| Precision | LYTNet V1 | 0.97 | 0.94 | 0.99 | 0.86 |
+| | LYTNet V2 | **0.98** | **0.95** | 0.99 | **0.93** |
+| Recall | LYTNet V1 | 0.96 | 0.94 | 0.96 | 0.92 |
+| | LYTNet V2 | 0.96 | **0.96** | **0.97** | **0.97** |
+
+| Network | Angle Error (degrees) | Startpoint Error | Endpoint Error |
+|---|-------|-----------------|-----------------|
+| LYTNet V1 | 6.27 | 0.0763 | 0.0510 |
+| LYTNet V2 | **6.15** | **0.0759** | **0.0477** |
 
 ## Application
 A demo iOS application is also provided. Requirements are iOS 11 and above. The application continuously iterates through the flowchart below:
