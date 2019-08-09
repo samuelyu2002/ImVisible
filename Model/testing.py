@@ -1,7 +1,8 @@
 import torch
 import time
 from torch.utils.data import DataLoader
-from network import LYTNet
+from LYTNet import LYTNet
+from LYTNetV2 import LYTNetV2
 from loss import my_loss
 from helpers import direction_performance, display_image
 from dataset import TrafficLightDataset
