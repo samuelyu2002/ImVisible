@@ -86,3 +86,14 @@ A demo iOS application is also provided. Requirements are iOS 11 and above. The 
 ![](flowchart.png)
 
 To use the application, open the LYTNet demo xcode project, and drag the model_wm_1000.mlmodel file into the project to add a reference to it. Then, build the application while connecting a phone iOS 11 or above. 
+
+## Citations
+Please cite our paper in your publications if this github helped in your research. The BibTeX reference is as follows: 
+```
+@inproceedings{yu2019LYTNet,
+  title   =  {{LYTNet}: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired},
+  author  =  {Yu, Samuel and Lee, Heon and Kim, JungHoon},
+  booktitle =  {International Conference on Computer Analysis of Images and Patterns (CAIP)},
+  year    =  {2019}
+}
+```
