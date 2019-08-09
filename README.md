@@ -56,8 +56,6 @@ The coordinates represent the start and endpoint of the midline of the zebra cro
 Annotations can be downloaded from the annotations folder in this repo. 
 There are three downloadable versions of the dataset. With our network, the [876x657](https://dl.orangedox.com/p6T3Fs) resolution images was used during training to accomodate random cropping. The [768x576](https://dl.orangedox.com/9ZvH36) version was used during validation and testing without a random crop. 
 
-The 4032x3024 images will be available soon!
-
 ## Model
 
 ### LYTNet V1
