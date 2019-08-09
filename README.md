@@ -92,7 +92,7 @@ Please cite our paper in your publications if this github helped in your researc
 ```
 @inproceedings{yu2019LYTNet,
   title   =  {{LYTNet}: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired},
-  author  =  {Yu, Samuel and Lee, Heon and Kim, JungHoon},
+  author  =  {Yu, Samuel and Lee, Heon and Kim, John},
   booktitle =  {International Conference on Computer Analysis of Images and Patterns (CAIP)},
   year    =  {2019}
 }
