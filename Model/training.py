@@ -1,7 +1,8 @@
 import torch
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
-from network import LYTNet
+from LYTNet import LYTNet
+from LYTNetV2 import LYTNetV2
 from dataset import TrafficLightDataset
 from loss import my_loss
 from helpers import direction_performance
