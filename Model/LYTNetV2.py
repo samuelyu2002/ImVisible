@@ -150,7 +150,7 @@ class LYTNetV2(nn.Module):
         # building last several layers
         last_conv = make_divisible(960 * width_mult)
         self.features.append(conv_1x1_bn(input_channel, last_conv, nlin_layer=Hswish))
-        self.features.append(nn.AdaptiveAvgPool2d(1))
+        self.features.append(nn.AvgPool2d(12,9))
         self.features.append(Hswish(inplace=True))
         #self.features.append(nn.Dropout(0.1))
         self.features.append(nn.Conv2d(last_conv, last_channel, 1, 1, 0))
