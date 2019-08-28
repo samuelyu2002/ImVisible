@@ -1,7 +1,7 @@
-# Pedestrian Traffic Lights Dataset (PTL) and Traffic Light Detector LYTNet
+# Pedestrian Traffic Lights Dataset (PTL) and Traffic Light Detector LytNet
 
 ### Introduction
-This project consists of three sections. First, we provide an image dataset of street intersections, labelled with the color of the corresponding pedestrian traffic light and the position of the zebra crossing in the image. Second, we provide a neural network adapted off of MobileNet v2 (LYTNet) that accepts a larger input size while still running at near real-time speeds on an IPhone 7. Third, we provide a demo iOS application that is able to run LYTNet and output the appropriate information onto the phone screen. 
+This project consists of three sections. First, we provide an image dataset of street intersections, labelled with the color of the corresponding pedestrian traffic light and the position of the zebra crossing in the image. Second, we provide a neural network adapted off of MobileNet v2 (LytNet) that accepts a larger input size while still running at near real-time speeds on an IPhone 7. Third, we provide a demo iOS application that is able to run LytNet and output the appropriate information onto the phone screen. 
 
 Our full paper is available at: https://arxiv.org/abs/1907.09706
 
@@ -60,9 +60,9 @@ There are three downloadable versions of the dataset. With our network, the [876
 
 ## Model
 
-### LYTNet V1
+### LytNet V1
 
-We created our own pytorch neural network LYTNet that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. Given and input image, our model will return the appropriate color of the traffic light, and two image coordinates representing the predicted endpoints of the zebra crossing. 
+We created our own pytorch neural network LytNet that can be accessed from the Model folder in this repo. The folder contains both the code and the weights after running the code with the dataset. Given and input image, our model will return the appropriate color of the traffic light, and two image coordinates representing the predicted endpoints of the zebra crossing. 
 
 Here are the precisions and recalls for each class:
 
@@ -81,24 +81,24 @@ All | 739 | 6.27 | 0.0763 | 0.0510 |
 
 Our network is adapted from MobileNet, with a larger input size of 768x576 designed for image classification tasks that involve a smaller object within the image (such as a traffic light). Certain layers from MobileNet v2 were removed for the network to run at a near real-time frame rate (21 fps), but still maintain high accuracy. 
 
-This is the structure of LYTNet V1:
+This is the structure of LytNet V1:
 ![](Model/structure.png)
 
-### LYTNet V2
+### LytNet V2
 
 Our network has been updated, achieving better accuracy. Below is a comparison between our two networks:
 
 |   | Network | Red | Green | Countdown Green | Countdown Blank |
 |---|---------|-----|-------|-----------------|-----------------|
-| Precision | LYTNet V1 | 0.97 | 0.94 | 0.99 | 0.86 |
-| | LYTNet V2 | **0.98** | **0.95** | 0.99 | **0.93** |
-| Recall | LYTNet V1 | 0.96 | 0.94 | 0.96 | 0.92 |
-| | LYTNet V2 | 0.96 | **0.96** | **0.97** | **0.97** |
+| Precision | LytNet V1 | 0.97 | 0.94 | 0.99 | 0.86 |
+| | LytNet V2 | **0.98** | **0.95** | 0.99 | **0.93** |
+| Recall | LytNet V1 | 0.96 | 0.94 | 0.96 | 0.92 |
+| | LytNet V2 | 0.96 | **0.96** | **0.97** | **0.97** |
 
 | Network | Angle Error (degrees) | Startpoint Error | Endpoint Error |
 |---|-------|-----------------|-----------------|
-| LYTNet V1 | 6.27 | 0.0763 | 0.0510 |
-| LYTNet V2 | **6.15** | **0.0759** | **0.0477** |
+| LytNet V1 | 6.27 | 0.0763 | 0.0510 |
+| LytNet V2 | **6.15** | **0.0759** | **0.0477** |
 
 ## Application
 A demo iOS application is also provided. Requirements are iOS 11 and above. The application continuously iterates through the flowchart below:
