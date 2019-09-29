@@ -1,9 +1,9 @@
 # Pedestrian Traffic Lights Dataset (PTL) and Traffic Light Detector LytNet
 
+The implementation of the work done by the following papers: https://arxiv.org/abs/1907.09706, https://arxiv.org/abs/1909.09598
+
 ### Introduction
 This project consists of three sections. First, we provide an image dataset of street intersections, labelled with the color of the corresponding pedestrian traffic light and the position of the zebra crossing in the image. Second, we provide a neural network adapted off of MobileNet v2 (LytNet) that accepts a larger input size while still running at near real-time speeds on an IPhone 7. Third, we provide a demo iOS application that is able to run LytNet and output the appropriate information onto the phone screen. 
-
-Our full paper is available at: https://arxiv.org/abs/1907.09706
 
 ![](preview.png)
 
@@ -107,12 +107,18 @@ A demo iOS application is also provided. Requirements are iOS 11 and above. The 
 To use the application, open the LYTNet demo xcode project, and drag the model_wm_1000.mlmodel file into the project to add a reference to it. Then, build the application while connecting a phone iOS 11 or above. 
 
 ## Citations
-Please cite our paper in your publications if this github helped in your research. The BibTeX reference is as follows: 
+Please consider citing our papers in your publications if this project helped with your research. The BibTeX reference is as follows: 
 ```
-@inproceedings{yu2019LYTNet,
+@inproceedings{yu2019LytNet,
   title   =  {{LYTNet}: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired},
   author  =  {Yu, Samuel and Lee, Heon and Kim, John},
   booktitle =  {International Conference on Computer Analysis of Images and Patterns (CAIP)},
+  year    =  {2019}
+}
+@inproceedings{yu2019LytNetV2,
+  title   =  {Street Crossing Aid Using Light-weight CNNs for the Visually Impaired},
+  author  =  {Yu, Samuel and Lee, Heon and Kim, Jung Hoon},
+  booktitle =  {arXiv preprint arXiv:1909.09598},
   year    =  {2019}
 }
 ```
