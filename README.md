@@ -107,7 +107,7 @@ A demo iOS application is also provided. Requirements are iOS 11 and above. The 
 To use the application, open the LYTNet demo xcode project, and drag the model_wm_1000.mlmodel file into the project to add a reference to it. Then, build the application while connecting a phone iOS 11 or above. 
 
 ## Citations
-Please consider citing our papers in your publications if this project helped with your research. The BibTeX reference is as follows: 
+Please consider citing our papers in your publications if this project helped with your research. The BibTeX references are as follows: 
 ```
 @inproceedings{yu2019LytNet,
   title   =  {{LYTNet}: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired},
