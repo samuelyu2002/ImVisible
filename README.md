@@ -114,7 +114,7 @@ Please consider citing our papers in your publications if this project helped wi
 @InProceedings{yu2019LytNet,
   title   =  {LYTNet: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired},
   author  =  {Yu, Samuel and Lee, Heon and Kim, John},
-  booktitle =  {International Conference on Computer Analysis of Images and Patterns (CAIP)},
+  booktitle =  {Computer Analysis of Images and Patterns (CAIP)},
   month = {Aug},
   year    =  {2019}
 }
