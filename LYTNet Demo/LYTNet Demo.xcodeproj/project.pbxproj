@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45220B47227C80A200D0ED67 /* model_wm_1000.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 45220B46227C80A200D0ED67 /* model_wm_1000.mlmodel */; };
 		456A7F0521E0FC7000DD08D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A7F0421E0FC7000DD08D1 /* AppDelegate.swift */; };
 		456A7F0721E0FC7000DD08D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A7F0621E0FC7000DD08D1 /* ViewController.swift */; };
-		456A7F0A21E0FC7000DD08D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456A7F0821E0FC7000DD08D1 /* Main.storyboard */; };
 		456A7F0C21E0FC7200DD08D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456A7F0B21E0FC7200DD08D1 /* Assets.xcassets */; };
 		456A7F0F21E0FC7200DD08D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456A7F0D21E0FC7200DD08D1 /* LaunchScreen.storyboard */; };
 		456A7F1A21E0FC7200DD08D1 /* LYTNet DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A7F1921E0FC7200DD08D1 /* LYTNet DemoTests.swift */; };
 		456A7F2521E0FC7200DD08D1 /* LYTNet DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A7F2421E0FC7200DD08D1 /* LYTNet DemoUITests.swift */; };
 		456A7F3321E0FDBF00DD08D1 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A7F3221E0FDBF00DD08D1 /* VisionObjectRecognitionViewController.swift */; };
+		45D51D5523C0E358001D0655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D51D5423C0E358001D0655 /* Main.storyboard */; };
+		45D51D5723C0E39E001D0655 /* LytNetV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 45D51D5623C0E39E001D0655 /* LytNetV1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		45220B46227C80A200D0ED67 /* model_wm_1000.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = model_wm_1000.mlmodel; path = "../../../../Documents/Grade 11/ISEF/model_wm_1000.mlmodel"; sourceTree = "<group>"; };
 		456A7F0121E0FC7000DD08D1 /* LYTNet Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LYTNet Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		456A7F0421E0FC7000DD08D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456A7F0621E0FC7000DD08D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		456A7F0921E0FC7000DD08D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		456A7F0B21E0FC7200DD08D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456A7F0E21E0FC7200DD08D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		456A7F1021E0FC7200DD08D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		456A7F2421E0FC7200DD08D1 /* LYTNet DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LYTNet DemoUITests.swift"; sourceTree = "<group>"; };
 		456A7F2621E0FC7200DD08D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		456A7F3221E0FDBF00DD08D1 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
+		45D51D5423C0E358001D0655 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		45D51D5623C0E39E001D0655 /* LytNetV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LytNetV1.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +104,10 @@
 				456A7F0421E0FC7000DD08D1 /* AppDelegate.swift */,
 				456A7F0621E0FC7000DD08D1 /* ViewController.swift */,
 				456A7F3221E0FDBF00DD08D1 /* VisionObjectRecognitionViewController.swift */,
-				456A7F0821E0FC7000DD08D1 /* Main.storyboard */,
+				45D51D5423C0E358001D0655 /* Main.storyboard */,
 				456A7F0B21E0FC7200DD08D1 /* Assets.xcassets */,
+				45D51D5623C0E39E001D0655 /* LytNetV1.mlmodel */,
 				456A7F0D21E0FC7200DD08D1 /* LaunchScreen.storyboard */,
-				45220B46227C80A200D0ED67 /* model_wm_1000.mlmodel */,
 				456A7F1021E0FC7200DD08D1 /* Info.plist */,
 			);
 			path = "LYTNet Demo";
@@ -235,9 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D51D5523C0E358001D0655 /* Main.storyboard in Resources */,
 				456A7F0F21E0FC7200DD08D1 /* LaunchScreen.storyboard in Resources */,
 				456A7F0C21E0FC7200DD08D1 /* Assets.xcassets in Resources */,
-				456A7F0A21E0FC7000DD08D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				456A7F3321E0FDBF00DD08D1 /* VisionObjectRecognitionViewController.swift in Sources */,
-				45220B47227C80A200D0ED67 /* model_wm_1000.mlmodel in Sources */,
 				456A7F0721E0FC7000DD08D1 /* ViewController.swift in Sources */,
 				456A7F0521E0FC7000DD08D1 /* AppDelegate.swift in Sources */,
+				45D51D5723C0E39E001D0655 /* LytNetV1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		456A7F0821E0FC7000DD08D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				456A7F0921E0FC7000DD08D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		456A7F0D21E0FC7200DD08D1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

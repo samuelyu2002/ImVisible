@@ -1,9 +1,9 @@
 /*
- See LICENSE folder for this sample’s licensing information.
- 
- Abstract:
- Contains the view controller for the Breakfast Finder.
- */
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Contains the view controller for the Breakfast Finder.
+*/
 
 import UIKit
 import AVFoundation
@@ -83,7 +83,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         session.commitConfiguration()
         previewLayer = AVCaptureVideoPreviewLayer(session: session)
         previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        rootLayer = view.layer
+        rootLayer = previewView.layer
         previewLayer.frame = rootLayer.bounds
         rootLayer.addSublayer(previewLayer)
     }
@@ -119,10 +119,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             exifOrientation = .up
         }
         return exifOrientation
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 }
 
