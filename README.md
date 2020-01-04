@@ -106,7 +106,7 @@ Our network has been updated, achieving better accuracy. Below is a comparison b
 A demo iOS application is also provided. Requirements are iOS 11 and above. The application continuously iterates through the flowchart below:
 ![](flowchart.png)
 
-To use the application, open the LYTNet demo xcode project, and drag the model_wm_1000.mlmodel file into the project to add a reference to it. Then, build the application while connecting a phone iOS 11 or above. 
+To use the application, open the LYTNet demo xcode project and add a developer team. Build the application on a device with iOS 12.0 or above.
 
 ## Citations
 Please consider citing our papers in your publications if this project helped with your research. The BibTeX references are as follows: 
