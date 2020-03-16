@@ -126,7 +126,7 @@ class LYTNet(nn.Module):
             if isinstance(m, nn.Conv2d):
                 if m.bias is not None:
                     m.bias.data.zero_()
-                nn.init.xavier_normal(m.weight.data)
+                nn.init.xavier_normal_(m.weight.data)
             elif isinstance(m, nn.BatchNorm2d):
                 m.weight.data.fill_(1)
                 m.bias.data.zero_()
