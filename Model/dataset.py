@@ -90,10 +90,12 @@ class TrafficLightDataset(Dataset):
             points = [cp[0]/768, 1-cp[1]/576, cp[2]/768, 1-cp[3]/576]
             
             image = F.crop(image, shifty, shiftx, 576, 768)
+            transform = transforms.Compose([transforms.ColorJitter(0.05,0.05,0.05,0.01)])
+            image = transform(image)
         
         #normalize image
-        image = transforms.functional.to_tensor(image)
-        image = transforms.functional.normalize(image, mean = [120.56737612047593, 119.16664454573734, 113.84554638827127], std=[66.32028460114392, 65.09469952002551, 65.67726614496246])
+        #image = transforms.functional.to_tensor(image)
+        #image = transforms.functional.normalize(image, mean = [120.56737612047593, 119.16664454573734, 113.84554638827127], std=[66.32028460114392, 65.09469952002551, 65.67726614496246])
         
         image = np.transpose(image, (2, 0, 1))
         points = torch.tensor(points)
