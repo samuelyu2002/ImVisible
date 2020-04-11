@@ -94,9 +94,9 @@ for epoch in range(MAX_EPOCHS):
         loss.backward()
         optimizer.step()
         
-        running_loss += loss
-        running_loss_MSE += MSE
-        running_loss_cross_entropy += cross_entropy
+        running_loss += loss.item()
+        running_loss_MSE += MSE.item()
+        running_loss_cross_entropy += cross_entropy.item()
 
     print('Epoch: ' + str(epoch+1))
     print('Average training loss: ' + str(running_loss/(j+1)))
@@ -162,9 +162,9 @@ for epoch in range(MAX_EPOCHS):
                 tp[str(predicted.cpu().numpy()[0])] += 1 #increments correct class's true positive count by one
             
             loss, MSE, cross_entropy = loss_fn(pred_classes, pred_direc, points, mode)
-            val_running_loss += loss
-            val_mse_loss += MSE
-            val_ce_loss += cross_entropy
+            val_running_loss += loss.item()
+            val_mse_loss += MSE.item()
+            val_ce_loss += cross_entropy.item()
             
             angle, start, end = direction_performance(pred_direc, points)
             val_angle_error += angle
