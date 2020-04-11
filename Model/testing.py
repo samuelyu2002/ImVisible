@@ -101,7 +101,7 @@ with torch.no_grad():
             display_image(image,title,pred_points, gt_points, 192) #factor is 192 because 4*192 = 768
 
         loss, MSE, cross_entropy =  loss_fn(pred_classes, pred_direc, points, mode)
-        running_loss += loss
+        running_loss += loss.item()
         angle, start, end = direction_performance(pred_direc, points)
         
         if(blocked[0] == "blocked"):
