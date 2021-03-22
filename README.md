@@ -119,10 +119,10 @@ Please consider citing our papers in your publications if this project helped wi
   year    =  {2019}
 }
 @InProceedings{yu2019LytNetV2,
-author = {Yu, Samuel and Lee, Heon and Kim, Junghoon},
-title = {Street Crossing Aid Using Light-Weight CNNs for the Visually Impaired},
-booktitle = {The IEEE International Conference on Computer Vision (ICCV) Workshops},
-month = {Oct},
-year = {2019}
+  author = {Yu, Samuel and Lee, Heon and Kim, Junghoon},
+  title = {Street Crossing Aid Using Light-Weight CNNs for the Visually Impaired},
+  booktitle = {The IEEE International Conference on Computer Vision (ICCV) Workshops},
+  month = {Oct},
+  year = {2019}
 }
 ```
