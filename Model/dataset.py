@@ -98,7 +98,7 @@ class TrafficLightDataset(Dataset):
         #image = transforms.functional.normalize(image, mean = [120.56737612047593, 119.16664454573734, 113.84554638827127], std=[66.32028460114392, 65.09469952002551, 65.67726614496246])
         
         image = np.transpose(image, (2, 0, 1))
-        points = torch.tensor(points)
+        points = torch.FloatTensor(points)
         
         #combine all the info into a dictionary
         final_label = {'image': image, 'mode':light_mode, 'points': points, 'block': block}
