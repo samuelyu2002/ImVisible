@@ -111,14 +111,14 @@ To use the application, open the LYTNet demo xcode project and add a developer t
 ## Citations
 Please consider citing our papers in your publications if this project helped with your research. The BibTeX references are as follows: 
 ```
-@InProceedings{yu2019LytNet,
+@InProceedings{yu2019lytnet,
   title = {LYTNet: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired},
   author = {Yu, Samuel and Lee, Heon and Kim, John},
   booktitle = {Computer Analysis of Images and Patterns (CAIP)},
   month = {Aug},
   year = {2019}
 }
-@InProceedings{yu2019LytNetV2,
+@InProceedings{yu2019lytnetv2,
   author = {Yu, Samuel and Lee, Heon and Kim, Junghoon},
   title = {Street Crossing Aid Using Light-Weight CNNs for the Visually Impaired},
   booktitle = {The IEEE International Conference on Computer Vision (ICCV) Workshops},
