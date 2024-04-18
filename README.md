@@ -56,9 +56,9 @@ The coordinates represent the start and endpoint of the midline of the zebra cro
 
 ## Download
 Annotations can be downloaded from the annotations folder in this repo. 
-There are three downloadable versions of the dataset. With our network, the [876x657](https://dl.orangedox.com/p6T3Fs) resolution images was used during training to accomodate random cropping. The [768x576](https://dl.orangedox.com/9ZvH36) version was used during validation and testing without a random crop. 
+There are three downloadable versions of the dataset. With our network, the [876x657](https://drive.google.com/file/d/1KhKT3mfcYcdb9Zwq5jZS1bkAJyogHZbZ/view?usp=drive_link) resolution images was used during training to accomodate random cropping. The [768x576](https://drive.google.com/file/d/117HUGczZwXFRbuBl7y4cHakH3xQV2Omo/view?usp=drive_link) version was used during validation and testing without a random crop. 
 
-The 4032x3024 full resolution dataset is out! Download here: [Part 1](https://dl.orangedox.com/KrVSsK), [Part 2](https://dl.orangedox.com/CMjgtX).
+The 4032x3024 full resolution dataset is out! Download here: [Part 1](https://drive.google.com/file/d/13bTo9IO7aYXKtEpzyhsNd6csJpVhA8lE/view?usp=drive_link), [Part 2](https://drive.google.com/file/d/1JDXCwaFHJG3Uh_xHyMHJHImO6UiP-Yc2/view?usp=drive_link).
 
 ## Model
 
